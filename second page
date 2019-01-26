@@ -1,0 +1,33 @@
+import javax.swing.*;
+import java.awt.*;
+
+class second extends JFrame {
+    public second() {
+        JLabel label = new JLabel();
+        JPanel panel = new JPanel(new GridBagLayout());
+        JTextField text = new JTextField(20);
+        getContentPane().add(panel, BorderLayout.NORTH);
+        JButton button = new JButton("FIND THE WORD");
+        getContentPane().add(button, BorderLayout.NORTH);
+        getContentPane().add(text, BorderLayout.NORTH);
+        setTitle("AROMA OF ENGLISH");
+        setSize(1000, 1000);
+        setVisible(true);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        label.setIcon(new ImageIcon("D://abc.PNG"));
+        add(panel);
+        GridBagConstraints c = new GridBagConstraints();
+        GridBagConstraints b = new GridBagConstraints();
+        b.gridx = 1;
+        b.gridy = 2;
+        c.gridx = 1;
+        c.gridy = 1;
+        panel.add(label);
+        panel.add(button, b);
+        panel.add(text, c);
+        add(panel);
+        validate();
+
+    }
+}
+
