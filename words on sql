@@ -1,0 +1,134 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 11, 2018 at 08:24 AM
+-- Server version: 10.1.33-MariaDB
+-- PHP Version: 7.2.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `aroma_of_english`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `words`
+--
+
+CREATE TABLE `words` (
+  `S.no` int(5) NOT NULL,
+  `Word_name` varchar(15) NOT NULL,
+  `Word_meaning` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `words`
+--
+
+INSERT INTO `words` (`S.no`, `Word_name`, `Word_meaning`) VALUES
+(1, 'a-la-mode', 'up to date,fashionable'),
+(2, 'ambiguous', 'difficult to understand'),
+(3, 'avid', 'keenly interested or enthusias'),
+(4, 'bestiary', 'collection of description of v'),
+(5, 'bewildered', 'confused,puzzled'),
+(6, 'bliss', 'state of being happy'),
+(7, 'celtic', 'group of languages '),
+(8, 'culminate', 'to give a concluding remark'),
+(9, 'cussed', 'awkwardly annoying'),
+(10, 'demersal', 'living close to the sea bed'),
+(11, 'ditzy', 'silly or scatterbrained'),
+(12, 'dweeb', 'boring,studious'),
+(13, 'elude', 'cleverly escape or avoid someo'),
+(14, 'eulogy', 'a speech that praises someone '),
+(15, 'exhort', 'strongly urge someone to do so'),
+(16, 'feisty', 'lively and spirited'),
+(17, 'filth', 'disgusting dirt'),
+(18, 'frienaissance', 'an activity to renew you frien'),
+(19, 'gaiety', 'the state of being light-heart'),
+(20, 'girdle', 'a belt worn around the waist'),
+(21, 'groan', 'make a deep soound of pain or '),
+(22, 'hermit', 'a person living in solitude fo'),
+(23, 'hippy', 'a young person who advocates p'),
+(24, 'hymn', 'a religious song of praise'),
+(25, 'iffy', 'seeming bad or wrong in some w'),
+(26, 'instigate', 'cause something to happen or b'),
+(27, 'irony', 'a situation that is the opposi'),
+(28, 'jersey', 'a knitted garment with long sl'),
+(29, 'judgemental', 'excessively critical'),
+(30, 'junkie', 'a drug addict'),
+(31, 'keen', 'eager and enthusiastic'),
+(32, 'keepsake', 'an item kept in the memory of '),
+(33, 'kink', 'a quirk in a person\'s characte'),
+(34, 'latch', 'grasp,take hold of'),
+(35, 'levitate', 'rise or cause to rise and hove'),
+(36, 'lucid', 'easy to understand'),
+(37, 'mirth', 'amusement'),
+(38, 'muck', 'dirt or waste matter'),
+(39, 'mystify', 'make something seem mysterious'),
+(40, 'nag', 'ask someone to do something th'),
+(41, 'narcissim', 'excessive interest in oneself '),
+(42, 'notary', 'a lawyer who is officialy auth'),
+(43, 'oblivion', 'the state of being forgotten'),
+(44, 'opus', 'a musical compositon'),
+(45, 'overdo', 'do something in an exaggerated'),
+(46, 'perplex', 'make someone feel puzzled'),
+(47, 'phoenix', 'a bird that periodically burns'),
+(48, 'plonker', 'a foolish or incompetent perso'),
+(49, 'quarterback', 'a layer stationed behind the c'),
+(50, 'quirk', 'a peculiar aspect of a person\''),
+(51, 'quisling', 'a traitor collaborating with a'),
+(52, 'reckon', 'be of the opinion'),
+(53, 'rive', 'tear apart or split'),
+(54, 'rogue', 'a dishonest or immoral person'),
+(55, 'schism', 'a split between strongly oppos'),
+(56, 'silhouette', 'the dark shape and outline of '),
+(57, 'superfluous', 'more than is needed ; unnecess'),
+(58, 'throng', 'a large,densely packed crowd'),
+(59, 'tizzy', 'a state of nervous excitement or agitation'),
+(60, 'trifle', 'a thing of little value or importance'),
+(61, 'ubiquitous', 'present,appearing,or found everywhere'),
+(62, 'unruffled', 'calm and unperturbed'),
+(63, 'urchin', 'a poor child dressed in ragged clothes'),
+(64, 'vague', 'not clear,certain or detailed'),
+(65, 'vengeance', 'punishment or harm caused to someone in return for'),
+(66, 'vouch', 'confirm that something is true or accurate'),
+(67, 'warmonger', 'a person who tries to bring about war'),
+(68, 'whup', 'thrash someone or something'),
+(69, 'wrangle ', 'a long and complicated dispute or argument'),
+(70, 'xenial', 'a friendly relationship between two parties'),
+(71, 'xeric', 'an ecological term used to describe anywhere extre'),
+(72, 'xyrophobia', 'the fear of being close to or touching sharp imple'),
+(73, 'yap', 'give a sharp,shrill bark'),
+(74, 'yeoman', 'a man who owned a house and a small area of farmin'),
+(75, 'yonder', 'over there'),
+(76, 'zenith', 'the point in the sky directly overhear'),
+(77, 'zing', 'energy,enthusiasm,or liveliness'),
+(78, 'zonk', 'fall suddenly and heavily asleep');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `words`
+--
+ALTER TABLE `words`
+  ADD PRIMARY KEY (`S.no`,`Word_name`,`Word_meaning`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
